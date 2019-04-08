@@ -13,7 +13,7 @@
       <th>Completed ID</th>
     </tr>
   </thead>
-  <tbody *ngFor="let user of users" class="users">
+  <tbody *ngFor="let user of users" class="users" [ngClass]="{'gray': user.id % 2 === 0}">
     <tr>
       <td>{{user.userId}}</td>
       <td>{{user.id}}</td>
